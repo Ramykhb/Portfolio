@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     default: `${siteConfig.name} — ${siteConfig.title}`,
     template: `%s — ${siteConfig.name}`,
   },
+  icons: {
+    icon: "/favicon.svg",
+  },
   description: siteConfig.description,
   keywords: [
     "Full Stack Engineer",
@@ -47,7 +50,14 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.description,
     siteName: siteConfig.name,
-    images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -83,7 +93,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${sans.variable} ${mono.variable} font-sans antialiased`}>
+      <body
+        className={`${sans.variable} ${mono.variable} font-sans antialiased`}
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

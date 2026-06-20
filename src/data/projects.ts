@@ -146,8 +146,8 @@ export const projects: Project[] = [
     thumbnail: "/projects/expoalalam-0.jpg",
     cover: "/projects/expoalalam-0.jpg",
     techStack: ["React", "TypeScript", "Node.js", "MySQL", "AWS S3"],
-    githubUrl: "",
-    liveUrl: "",
+    githubUrl: "https://github.com/Ramykhb/expo-al-alam-website",
+    liveUrl: "https://expoalalam.com",
     overview:
       "ExpoAlAlam is a modern car dealership platform designed to streamline the process of browsing and managing vehicle listings. It provides users with curated car collections, detailed vehicle pages, and a smooth exploration experience, while also offering an admin dashboard for managing inventory and publishing new listings.",
     problem:

@@ -2,6 +2,17 @@ import type { Certification } from "@/types";
 
 export const certifications: Certification[] = [
   {
+    id: "cert-coursera-dl-spec",
+    title: "Deep Learning Specialization",
+    issuer: "DeepLearning.AI",
+    date: "2026",
+    credentialId: "B9NTNZNS4V5C",
+    verifyUrl:
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/B9NTNZNS4V5C",
+    image: "/certs/Coursera-B9NTNZNS4V5C.png",
+    skills: ["Deep Learning", "Neural Networks", "CNNs", "TensorFlow"],
+  },
+  {
     id: "cert-coursera-ml-spec",
     title: "Machine Learning Specialization",
     issuer: "DeepLearning.AI",
@@ -16,28 +27,6 @@ export const certifications: Certification[] = [
       "Unsupervised Learning",
       "TensorFlow",
     ],
-  },
-  {
-    id: "cert-coursera-dl-spec",
-    title: "Deep Learning Specialization",
-    issuer: "DeepLearning.AI",
-    date: "2026",
-    credentialId: "B9NTNZNS4V5C",
-    verifyUrl:
-      "https://www.coursera.org/account/accomplishments/specialization/certificate/B9NTNZNS4V5C",
-    image: "/certs/Coursera-B9NTNZNS4V5C.png",
-    skills: ["Deep Learning", "Neural Networks", "CNNs", "TensorFlow"],
-  },
-  {
-    id: "cert-cs50-sql",
-    title: "CS50: Introduction to Databases with SQL",
-    issuer: "CS50",
-    date: "2025",
-    credentialId: "4a66a6af-f741-4462-a275-f7c3b0e31432",
-    verifyUrl:
-      "https://cs50.harvard.edu/certificates/4a66a6af-f741-4462-a275-f7c3b0e31432",
-    image: "/certs/CS50-SQL.png",
-    skills: ["SQL", "Database Design", "Query Optimization", "Data Modeling"],
   },
   {
     id: "cert-nvidia-deep-learning",
@@ -70,6 +59,17 @@ export const certifications: Certification[] = [
       "Prompt Engineering",
       "AI Applications",
     ],
+  },
+  {
+    id: "cert-cs50-sql",
+    title: "CS50: Introduction to Databases with SQL",
+    issuer: "CS50",
+    date: "2025",
+    credentialId: "4a66a6af-f741-4462-a275-f7c3b0e31432",
+    verifyUrl:
+      "https://cs50.harvard.edu/certificates/4a66a6af-f741-4462-a275-f7c3b0e31432",
+    image: "/certs/CS50-SQL.png",
+    skills: ["SQL", "Database Design", "Query Optimization", "Data Modeling"],
   },
   {
     id: "cert-cs50-x",

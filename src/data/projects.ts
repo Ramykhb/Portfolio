@@ -90,25 +90,25 @@ export const projects: Project[] = [
     ],
     screenshots: [
       {
-        src: "/projects/sitmypet-1.jpeg",
+        src: "/projects/sitmypet-1.jpg",
         alt: "SitMyPet Role Selection",
         caption:
           "Users choose whether to continue as a pet owner or pet sitter during onboarding.",
       },
       {
-        src: "/projects/sitmypet-2.jpeg",
+        src: "/projects/sitmypet-2.jpg",
         alt: "SitMyPet Home Screen",
         caption:
           "The main dashboard displaying pet care requests and nearby sitter opportunities.",
       },
       {
-        src: "/projects/sitmypet-3.jpeg",
+        src: "/projects/sitmypet-3.jpg",
         alt: "SitMyPet Post Details Screen",
         caption:
           "Detailed view of a pet care request with requirements, location, and booking information.",
       },
       {
-        src: "/projects/sitmypet-4.jpeg",
+        src: "/projects/sitmypet-4.jpg",
         alt: "SitMyPet Create Post Screen",
         caption:
           "Form interface for creating and publishing new pet care requests.",
@@ -193,27 +193,27 @@ export const projects: Project[] = [
     ],
     screenshots: [
       {
-        src: "/projects/expoalalam-1.jpeg",
+        src: "/projects/expoalalam-1.jpg",
         alt: "ExpoAlAlam Home Screen",
         caption: "Landing page of ExpoAlAlam.",
       },
       {
-        src: "/projects/expoalalam-2.jpeg",
+        src: "/projects/expoalalam-2.jpg",
         alt: "ExpoAlAlam Collections Screen",
         caption: "Collections screen displaying categorized car listings.",
       },
       {
-        src: "/projects/expoalalam-3.jpeg",
+        src: "/projects/expoalalam-3.jpg",
         alt: "ExpoAlAlam Car Details Screen",
         caption: "Detailed car view with specifications and images.",
       },
       {
-        src: "/projects/expoalalam-4.jpeg",
+        src: "/projects/expoalalam-4.jpg",
         alt: "ExpoAlAlam About Us Page",
         caption: "About us page describing the dealership and mission.",
       },
       {
-        src: "/projects/expoalalam-5.jpeg",
+        src: "/projects/expoalalam-5.jpg",
         alt: "ExpoAlAlam Contact Us Page",
         caption: "Contact page with form and dealership contact information.",
       },
@@ -246,8 +246,8 @@ export const projects: Project[] = [
     category: "Frontend",
     year: "2025",
     featured: false,
-    thumbnail: "/projects/green-power-0.jpeg",
-    cover: "/projects/green-power-0.jpeg",
+    thumbnail: "/projects/green-power-0.jpg",
+    cover: "/projects/green-power-0.jpg",
     techStack: ["HTML", "CSS", "JavaScript", "YouTube Embeds"],
     githubUrl: "https://github.com/Ramykhb/MLTM-Project-II",
     liveUrl: "https://green-power-mltm.netlify.app",
@@ -297,24 +297,24 @@ export const projects: Project[] = [
     ],
     screenshots: [
       {
-        src: "/projects/green-power-1.jpeg",
+        src: "/projects/green-power-1.jpg",
         alt: "Green Power Homepage",
         caption: "Landing page introducing the Green Power learning platform.",
       },
       {
-        src: "/projects/green-power-2.jpeg",
+        src: "/projects/green-power-2.jpg",
         alt: "Green Power Course Page",
         caption:
           "Course page containing learning material, images, and embedded videos.",
       },
       {
-        src: "/projects/green-power-3.jpeg",
+        src: "/projects/green-power-3.jpg",
         alt: "Green Power About Us Page",
         caption:
           "About Us page presenting the mission and team behind the platform.",
       },
       {
-        src: "/projects/green-power-4.jpeg",
+        src: "/projects/green-power-4.jpg",
         alt: "Green Power Contact Us Page",
         caption:
           "Contact page allowing learners to reach out with questions and feedback.",
@@ -348,8 +348,8 @@ export const projects: Project[] = [
     category: "Frontend",
     year: "2024",
     featured: false,
-    thumbnail: "/projects/qubit-pioneers-0.jpeg",
-    cover: "/projects/qubit-pioneers-0.jpeg",
+    thumbnail: "/projects/qubit-pioneers-0.jpg",
+    cover: "/projects/qubit-pioneers-0.jpg",
     techStack: ["HTML", "CSS", "JavaScript", "YouTube Embeds"],
     githubUrl: "https://github.com/Ramykhb/MLTM-Project",
     liveUrl: "https://qubit-pioneers.netlify.app",
@@ -399,25 +399,25 @@ export const projects: Project[] = [
     ],
     screenshots: [
       {
-        src: "/projects/qubit-pioneers-1.jpeg",
+        src: "/projects/qubit-pioneers-1.jpg",
         alt: "Qubit Pioneers Homepage",
         caption:
           "Landing page introducing the Qubit Pioneers learning platform.",
       },
       {
-        src: "/projects/qubit-pioneers-2.jpeg",
+        src: "/projects/qubit-pioneers-2.jpg",
         alt: "Qubit Pioneers Course Page",
         caption:
           "Course page containing learning material, images, and embedded videos.",
       },
       {
-        src: "/projects/qubit-pioneers-3.jpeg",
+        src: "/projects/qubit-pioneers-3.jpg",
         alt: "Qubit Pioneers About Us Page",
         caption:
           "About Us page presenting the mission and team behind the platform.",
       },
       {
-        src: "/projects/qubit-pioneers-4.jpeg",
+        src: "/projects/qubit-pioneers-4.jpg",
         alt: "Qubit Pioneers Contact Us Page",
         caption:
           "Contact page allowing learners to reach out with questions and feedback.",

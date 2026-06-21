@@ -441,6 +441,172 @@ export const projects: Project[] = [
       "Clear course structure improves learner engagement and retention.",
     ],
   },
+  {
+    slug: "gaming-lounge-pos",
+    title: "Gaming Lounge POS",
+    tagline:
+      "A desktop point-of-sale and player management system built for gaming lounges.",
+    description:
+      "A JavaFX-based POS and gaming lounge management system that handles player accounts, playtime tracking, snack sales, coupon redemption, transaction management, receipt generation, and administrative operations.",
+    category: "Full Stack",
+    year: "2025",
+    featured: false,
+    thumbnail: "/projects/gaming-lounge-pos-0.jpg",
+    cover: "/projects/gaming-lounge-pos-0.jpg",
+    techStack: ["Java", "JavaFX", "CSS", "MySQL", "Java Mail", "QR Codes"],
+    githubUrl: "https://github.com/Ramykhb/GamingLoungePOS",
+    liveUrl: "",
+    overview:
+      "Gaming Lounge POS is a desktop application designed for gaming cafés and lounges. It provides separate interfaces for administrators and players, allowing efficient management of customers, snacks, coupons, transactions, and gameplay time while delivering a streamlined customer experience.",
+    problem:
+      "Gaming lounges often rely on manual processes for tracking customer playtime, snack purchases, coupons, and payments, leading to inefficiencies and inaccurate records.",
+    solution:
+      "The system centralizes lounge operations by providing automated playtime tracking, POS functionality, QR coupon redemption, transaction history, receipt generation, and comprehensive administrative tools in a single desktop application.",
+    architecture:
+      "The application is built using JavaFX for the desktop interface, CSS for custom styling, and MySQL for persistent storage. Background threads continuously track active player sessions, while role-based interfaces separate administrative operations from player functionality.",
+    architectureLayers: [
+      {
+        name: "Desktop Client",
+        items: ["JavaFX", "CSS Styling", "Player Interface", "Admin Interface"],
+      },
+      {
+        name: "Business Logic",
+        items: [
+          "Time Tracking",
+          "POS Operations",
+          "Coupon Management",
+          "Transactions",
+        ],
+      },
+      {
+        name: "Gaming Features",
+        items: ["Memory Game", "Snake Game", "Session Control"],
+      },
+      {
+        name: "Data Layer",
+        items: ["MySQL", "Users", "Snacks", "Transactions", "Coupons"],
+      },
+    ],
+    features: [
+      {
+        title: "Automated Playtime Tracking",
+        description:
+          "A dedicated thread tracks session duration while decrementing remaining purchased playtime in real time.",
+      },
+      {
+        title: "Point of Sale System",
+        description:
+          "Players can purchase snacks and additional playtime directly through the application.",
+      },
+      {
+        title: "QR Coupon Redemption",
+        description:
+          "Administrators generate QR coupons that players can scan to claim bonus playtime.",
+      },
+      {
+        title: "Receipt Generation & Email Delivery",
+        description:
+          "Transactions can be printed as receipts and sent to customers through email.",
+      },
+      {
+        title: "Mini Games",
+        description:
+          "Includes Memory Game and Snake Game that players can access while they have active playtime.",
+      },
+    ],
+    screenshots: [
+      {
+        src: "/projects/gaming-lounge-pos-1.jpg",
+        alt: "Register Screen",
+        caption: "Player registration screen for creating new accounts.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-2.jpg",
+        alt: "Login Screen",
+        caption: "Authentication screen for administrators and players.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-3.jpg",
+        alt: "Player Home Screen",
+        caption:
+          "Dashboard displaying player statistics and remaining playtime.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-4.jpg",
+        alt: "Snack Shop",
+        caption: "Player snack shop for purchasing food and beverages.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-5.jpg",
+        alt: "Transaction History",
+        caption: "Player transaction history and purchase records.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-6.jpg",
+        alt: "Memory Game",
+        caption: "Built-in memory game available to active players.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-7.jpg",
+        alt: "Snake Game",
+        caption: "Classic snake game integrated into the platform.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-8.jpg",
+        alt: "Admin Dashboard",
+        caption:
+          "Administrative dashboard showing sales and customer statistics.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-9.jpg",
+        alt: "Manage Users",
+        caption: "User management interface for administrators.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-10.jpg",
+        alt: "Add User",
+        caption: "Form for creating and editing player accounts.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-11.jpg",
+        alt: "Manage Snacks",
+        caption: "Snack inventory management screen.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-12.jpg",
+        alt: "Add Snack",
+        caption: "Interface for adding and updating snack products.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-13.jpg",
+        alt: "Generate Coupon",
+        caption: "QR coupon generation screen for bonus playtime rewards.",
+      },
+      {
+        src: "/projects/gaming-lounge-pos-14.jpg",
+        alt: "Admin Transactions",
+        caption: "Administrative transaction history and reporting page.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Real-Time Session Management",
+        description:
+          "Implementing reliable background-thread time tracking while keeping the user interface responsive required careful synchronization and state management.",
+      },
+      {
+        title: "Role-Based Desktop Experience",
+        description:
+          "Designing distinct workflows for players and administrators while sharing the same application architecture required a flexible permission system.",
+      },
+    ],
+    lessons: [
+      "JavaFX provides a powerful foundation for complex desktop business applications.",
+      "Background threads must be carefully managed when updating time-sensitive user data.",
+      "Role-based design greatly improves maintainability for multi-user systems.",
+      "Combining POS operations with customer session tracking creates a more efficient gaming lounge workflow.",
+    ],
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {

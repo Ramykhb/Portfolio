@@ -237,6 +237,108 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "green-power",
+    title: "Green Power",
+    tagline:
+      "An interactive educational platform for learning about next-generation battery technologies.",
+    description:
+      "A frontend educational website built with HTML, CSS, and JavaScript that teaches next-generation battery technologies through structured lessons, embedded videos and structured educational content.",
+    category: "Frontend",
+    year: "2025",
+    featured: false,
+    thumbnail: "/projects/green-power-0.jpeg",
+    cover: "/projects/green-power-0.jpeg",
+    techStack: ["HTML", "CSS", "JavaScript", "YouTube Embeds"],
+    githubUrl: "https://github.com/Ramykhb/MLTM-Project-II",
+    liveUrl: "https://green-power-mltm.netlify.app",
+    overview:
+      "Green Power is an educational web platform designed to introduce learners to modern battery technologies, energy storage systems, and the future of sustainable energy through engaging lessons, visual content, embedded educational videos, and knowledge assessments.",
+    problem:
+      "Understanding emerging battery technologies can be challenging due to the technical concepts involved and the rapid pace of innovation in energy storage.",
+    solution:
+      "Green Power provides a structured learning experience combining visual explanations and video-based lessons that help learners understand modern battery technologies and energy storage systems.",
+    architecture:
+      "The platform is built entirely with HTML, CSS, and JavaScript. Course content is delivered through images and embedded YouTube videos, while client-side quiz logic evaluates learner progress and certificate eligibility.",
+    architectureLayers: [
+      {
+        name: "Presentation Layer",
+        items: ["HTML", "CSS", "Responsive Design"],
+      },
+      {
+        name: "Learning Content",
+        items: ["Course Material", "Images", "YouTube Videos"],
+      },
+      {
+        name: "Interactive Features",
+        items: ["Course Navigation", "Learning Resources"],
+      },
+    ],
+    features: [
+      {
+        title: "Battery Technology Course",
+        description:
+          "Structured lessons covering lithium-ion batteries, solid-state batteries, and emerging energy storage technologies.",
+      },
+      {
+        title: "Embedded Video Learning",
+        description:
+          "Integrated YouTube videos provide additional explanations and real-world industry insights.",
+      },
+      {
+        title: "Visual Learning Resources",
+        description:
+          "Images and illustrations help explain complex battery and energy storage concepts.",
+      },
+      {
+        title: "Sustainable Energy Education",
+        description:
+          "Learn about the role of advanced batteries in renewable energy and future technologies.",
+      },
+    ],
+    screenshots: [
+      {
+        src: "/projects/green-power-1.jpeg",
+        alt: "Green Power Homepage",
+        caption: "Landing page introducing the Green Power learning platform.",
+      },
+      {
+        src: "/projects/green-power-2.jpeg",
+        alt: "Green Power Course Page",
+        caption:
+          "Course page containing learning material, images, and embedded videos.",
+      },
+      {
+        src: "/projects/green-power-3.jpeg",
+        alt: "Green Power About Us Page",
+        caption:
+          "About Us page presenting the mission and team behind the platform.",
+      },
+      {
+        src: "/projects/green-power-4.jpeg",
+        alt: "Green Power Contact Us Page",
+        caption:
+          "Contact page allowing learners to reach out with questions and feedback.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Simplifying Technical Concepts",
+        description:
+          "Presenting advanced battery technologies and energy storage concepts in a beginner-friendly format required careful content organization and visual explanations.",
+      },
+      {
+        title: "Educational Content Organization",
+        description:
+          "Structuring technical battery concepts into clear, engaging lessons required balancing technical accuracy with accessibility for beginners.",
+      },
+    ],
+    lessons: [
+      "Well-structured educational content improves learner engagement and comprehension.",
+      "Visual learning resources help simplify complex technical concepts.",
+      "Clear course structure improves learner engagement and retention.",
+    ],
+  },
+  {
     slug: "qubit-pioneers",
     title: "Qubit Pioneers",
     tagline:

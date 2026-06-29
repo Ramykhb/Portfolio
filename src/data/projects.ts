@@ -134,6 +134,204 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "lumea",
+    title: "Lumea",
+    tagline:
+      "A modern social media platform with real-time messaging, private profiles, and rich social interactions.",
+    description:
+      "A full-stack social media application built with React, Node.js, MySQL, Socket.IO, and Supabase Storage that enables users to create posts, interact with others, chat in real time, and manage their profiles.",
+    category: "Full Stack",
+    year: "2025",
+    featured: true,
+    thumbnail: "/projects/lumea-0.jpg",
+    cover: "/projects/lumea-0.jpg",
+    techStack: [
+      "React",
+      "Node.js",
+      "Express",
+      "JavaScript",
+      "MySQL",
+      "Socket.IO",
+      "JWT",
+      "Supabase Storage",
+    ],
+    githubUrl: "https://github.com/Ramykhb/Lumea",
+    liveUrl: "https://lumea-lb.site",
+    overview:
+      "Lumea is a full-stack social media platform inspired by modern social networking applications. Users can create and interact with posts, discover other profiles, communicate through real-time messaging, receive notifications, and customize their account privacy, all within a responsive React frontend powered by a Node.js backend.",
+    problem:
+      "Building a social media platform requires combining content sharing, user relationships, messaging, notifications, and privacy into a seamless experience while maintaining performance and scalability. Managing these interconnected features efficiently presents both architectural and database design challenges.",
+    solution:
+      "Lumea delivers a complete social networking experience through a React frontend and Node.js backend backed by MySQL. Socket.IO enables instant messaging, JWT secures authentication, and Supabase Storage manages uploaded profile images while users can create content, interact with others, and manage their privacy settings.",
+    architecture:
+      "Lumea follows a client-server architecture where React provides the user interface and communicates with a Node.js and Express backend through REST APIs. Socket.IO handles real-time messaging while MySQL stores users, posts, comments, messages, followers, and notifications. JWT secures protected routes, and Supabase Storage stores user profile images.",
+    architectureLayers: [
+      {
+        name: "Frontend",
+        items: ["React", "React Router", "Context API", "Responsive UI"],
+      },
+      {
+        name: "Backend API",
+        items: ["Node.js", "Express", "REST APIs", "JWT Authentication"],
+      },
+      {
+        name: "Real-Time Services",
+        items: ["Socket.IO", "Instant Messaging", "Online Presence"],
+      },
+      {
+        name: "Data & Storage",
+        items: [
+          "MySQL",
+          "Supabase Storage",
+          "Users",
+          "Posts",
+          "Comments",
+          "Messages",
+          "Notifications",
+        ],
+      },
+    ],
+    features: [
+      {
+        title: "Social Feed",
+        description:
+          "Create, like, comment on, save, and delete posts while browsing either the global feed or posts from followed users.",
+      },
+      {
+        title: "User Profiles",
+        description:
+          "Customize profiles with profile pictures, follower statistics, privacy settings, and personal posts.",
+      },
+      {
+        title: "Private Accounts",
+        description:
+          "Users can switch between public and private profiles, controlling who can follow and view their content.",
+      },
+      {
+        title: "Following System",
+        description:
+          "Follow and unfollow users while viewing followers and following lists.",
+      },
+      {
+        title: "Profile Search",
+        description:
+          "Quickly search for other users and navigate directly to their profiles.",
+      },
+      {
+        title: "Real-Time Messaging",
+        description:
+          "Chat instantly with other users through Socket.IO-powered real-time messaging.",
+      },
+      {
+        title: "Notification System",
+        description:
+          "Receive notifications for follows, likes, comments, and other social interactions.",
+      },
+      {
+        title: "Account Management",
+        description:
+          "Upload profile pictures, change passwords, and reset forgotten passwords securely.",
+      },
+    ],
+    screenshots: [
+      {
+        src: "/projects/lumea-1.jpg",
+        alt: "Login Screen",
+        caption:
+          "Login screen allowing users to securely access their accounts.",
+      },
+      {
+        src: "/projects/lumea-2.jpg",
+        alt: "Signup Screen",
+        caption: "Registration page for creating a new Lumea account.",
+      },
+      {
+        src: "/projects/lumea-3.jpg",
+        alt: "Main Feed",
+        caption: "Browse either all posts or posts from followed users.",
+      },
+      {
+        src: "/projects/lumea-4.jpg",
+        alt: "Likes List",
+        caption: "View everyone who has liked a specific post.",
+      },
+      {
+        src: "/projects/lumea-5.jpg",
+        alt: "Saved Posts",
+        caption: "Access posts that have been saved for later.",
+      },
+      {
+        src: "/projects/lumea-6.jpg",
+        alt: "Search Profiles",
+        caption: "Search for users across the platform.",
+      },
+      {
+        src: "/projects/lumea-7.jpg",
+        alt: "User Profile",
+        caption:
+          "Profile page displaying posts, followers, and following counts.",
+      },
+      {
+        src: "/projects/lumea-8.jpg",
+        alt: "Private Profile",
+        caption: "Private profile view shown to users without access.",
+      },
+      {
+        src: "/projects/lumea-9.jpg",
+        alt: "Chat Screen",
+        caption: "Real-time messaging between users using Socket.IO.",
+      },
+      {
+        src: "/projects/lumea-10.jpg",
+        alt: "Notifications",
+        caption: "Notification center displaying recent activity.",
+      },
+      {
+        src: "/projects/lumea-11.jpg",
+        alt: "Privacy Settings",
+        caption: "Choose whether the account is public or private.",
+      },
+      {
+        src: "/projects/lumea-12.jpg",
+        alt: "Followers & Following",
+        caption: "View followers and following lists.",
+      },
+      {
+        src: "/projects/lumea-13.jpg",
+        alt: "Dark Mode",
+        caption: "Toggle between light and dark themes.",
+      },
+      {
+        src: "/projects/lumea-14.jpg",
+        alt: "Change Password",
+        caption: "Update the account password securely.",
+      },
+      {
+        src: "/projects/lumea-15.jpg",
+        alt: "Forgot Password",
+        caption: "Password recovery and reset workflow.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Real-Time Messaging",
+        description:
+          "Keeping conversations synchronized between multiple users while maintaining responsive performance required carefully integrating Socket.IO with the REST API.",
+      },
+      {
+        title: "Designing Social Relationships",
+        description:
+          "Implementing followers, private profiles, saved posts, likes, comments, and notifications required careful relational database design to keep queries efficient and data consistent.",
+      },
+    ],
+    lessons: [
+      "Separating REST APIs from WebSocket events makes real-time applications easier to maintain.",
+      "Planning the database schema early is essential when building interconnected social features.",
+      "Reusable React components significantly improve scalability and maintainability.",
+      "JWT authentication and proper authorization are critical when implementing privacy controls.",
+    ],
+  },
+  {
     slug: "expoalalam-car-dealership",
     title: "ExpoAlAlam",
     tagline:
